@@ -6,36 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task List 2022</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <h1>Task List 2022</h1>
-      <form action="#" id="new-task-form">
-        <input
-          type="text"
-          id="new-task-input"
-          placeholder="What do you have planned?"
-        />
-        <input type="submit" id="new-task-submit" value="Add task" />
-      </form>
-    </header>
+      <div class="input">
+        <input type="text" id="new-task-input" placeholder="What do you have planned?"/>
+        <button type="submit" id="new-task-submit">ADD</button>
+      </div>
 
-    <main>
-      <section class="task-list">
-        <h2>Tasks</h2>
-        <div id="tasks">
-          <div class="task">
-            <div class="content">
-              <input type="text" class="text" value="My Shiny Task" readonly />
-            </div>
-            <div class="actions">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+    </header>
+    <section class="todos">
+      <ul id="todo-ul"></ul>
+    </section>
+
   <script src="app.js"></script>
 </html>
