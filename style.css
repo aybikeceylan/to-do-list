@@ -41,7 +41,7 @@ header h1 {
   display: inline-block;
   width: 50%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 input,
 button {
@@ -51,12 +51,11 @@ button {
   background: none;
 }
 #new-task-input {
-  margin-right: 10rem;
   border-radius: 1rem;
   background-color: var(--darker);
   color: var(--light);
   font-size: 1.25rem;
-  width: 100%;
+  width: 60%;
   padding: 1rem;
 }
 #new-task-input::placeholder {
